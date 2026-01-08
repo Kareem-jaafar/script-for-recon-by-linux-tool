@@ -5,7 +5,8 @@ thes script can
 - store the scan results to file. 
 - able to scan multiple domains at once.
 - produce human-readable report files.
-  
+    how install
+  git clone https://github.com/Kareem-jaafar/script-for-recon.git
   --->Requirements To Run
   1- Bash 4.0+
   2- curl 
