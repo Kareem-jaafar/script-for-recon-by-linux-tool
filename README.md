@@ -1,46 +1,40 @@
-thes script can 
-— Look for open ports 
-— Look for subdomains 
-— Look for file paths 
-- store the scan results to file. 
-- able to scan multiple domains at once.
-- produce human-readable report files.
-    how install
- < git clone https://github.com/Kareem-jaafar/script-for-recon.git >
-  --->Requirements To Run
-  1- Bash 4.0+
-  2- curl 
-  3- nmap 
-  4- git 
-  5- jq 
-  6- awk 
-  7- sed
-  8- subfinder
-  9- assetfinder
-  10- amass
-  11- httpx
-  12- fuff
-  13- waybackurls
-  14- whatweb
-  15- go language
-  
-  How Run 
- 1- chmod +x recon.sh
- 2- bash recon-tool.sh example.com
-------------|
-            |
-            |-------------------------------|
-                                            | 
-                    In the output, a folder will be created in this format
-Recon_2026-01-08_14-32-10/
-└── example.com/
-    ├── report_summary.txt
-    ├── 01_subdomains.txt
-    ├── 02_alive_subdomains.txt
-    ├── 03_ports.txt
-    ├── 04_all_endpoints.txt
-    ├── 05_endpoints_with_params.txt
-    ├── 06_technology_fingerprint.txt
-    ├── ffuf_blog.example.com.csv
-    ├── ffuf_api.example.com.csv
-    └── ...
+# Recon Tool – Automated Reconnaissance Script
+
+A Bash-based automated reconnaissance script designed for bug bounty hunters and penetration testers.  
+The script performs comprehensive **passive and active reconnaissance** against one or multiple domains and stores the results in a well-organized, human-readable format.
+
+---
+
+## Features
+
+- Discover subdomains using multiple tools
+- Check for alive subdomains
+- Scan open ports
+- Enumerate file paths and endpoints
+- Collect endpoints with parameters
+- Perform technology fingerprinting
+- Run directory fuzzing
+- Store all results automatically
+- Support scanning multiple domains
+- Generate clean, human-readable reports
+
+---
+
+## What This Script Can Do
+
+- Look for open ports  
+- Look for subdomains  
+- Look for file paths and endpoints  
+- Store scan results to files  
+- Scan multiple domains at once  
+- Produce human-readable report files  
+
+---
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Kareem-jaafar/script-for-recon.git
+cd script-for-recon
